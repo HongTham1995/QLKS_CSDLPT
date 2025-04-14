@@ -1,0 +1,596 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_role\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_role\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|d:\\university\\pttkhtdn\\hotelmanagerment-csdlpt\\bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|d:\\university\\pttkhtdn\\hotelmanagerment-csdlpt\\gui\\gui_role\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_role\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_role\\formcreateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_role\\formcreateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|d:\\university\\pttkhtdn\\hotelmanagerment-csdlpt\\bus\\phanquyenbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\phanquyenbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD2949D5-B7B1-4305-8078-0A370AC3EBE2}|DAO\\DAO.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD2949D5-B7B1-4305-8078-0A370AC3EBE2}|DAO\\DAO.csproj|solutionrelative:dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\bus\\phongbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\phongbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\frmforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\frmforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\bus\\chitietthuebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\chitietthuebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\bus\\chitietthuedichvubus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\chitietthuedichvubus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmbookingnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmbookingnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_staff\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_staff\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_staff\\frmaddstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_staff\\frmaddstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmselectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmselectroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\bookingnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\bookingnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\bookinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\bookinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmchitietthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmchitietthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmchitietthuedichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmchitietthuedichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmchitietphieuthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmchitietphieuthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_booking\\frmchitietthuephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_booking\\frmchitietthuephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_room\\itemroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_room\\itemroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\bus\\chitietthuephongbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\chitietthuephongbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_bill\\billform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_bill\\billform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_thongke\\formchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_thongke\\formchart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\bus\\hoadonbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94A9C1B-5D43-4B96-9BFC-7ED44A77C9FA}|BUS\\BUS.csproj|solutionrelative:bus\\hoadonbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_room\\frmaddroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_room\\frmaddroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_room\\roomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_room\\roomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\gui_staff\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\gui_staff\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F421C39D-BA89-4A20-B1F2-2C2E2672E601}|GUI\\GUI.csproj|solutionrelative:gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 35,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleForm.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\RoleForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROLE\\RoleForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\RoleForm.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_ROLE\\RoleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:20:59.434Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhanQuyenBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\PhanQuyenBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\PhanQuyenBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\PhanQuyenBUS.cs",
+              "RelativeToolTip": "BUS\\PhanQuyenBUS.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:19:24.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NhanVienBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\NhanVienBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\NhanVienBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\NhanVienBUS.cs",
+              "RelativeToolTip": "BUS\\NhanVienBUS.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAqwKMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:11:13.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChiTietThueBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThueBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ChiTietThueBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThueBUS.cs",
+              "RelativeToolTip": "BUS\\ChiTietThueBUS.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:30:18.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmChiTietThueDichVu.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThueDichVu.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmChiTietThueDichVu.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThueDichVu.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmChiTietThueDichVu.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAAAAUBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:29:23.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChiTietThueDichVuBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThueDichVuBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ChiTietThueDichVuBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThueDichVuBUS.cs",
+              "RelativeToolTip": "BUS\\ChiTietThueDichVuBUS.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:26:55.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmChiTietThuePhong.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThuePhong.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmChiTietThuePhong.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThuePhong.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmChiTietThuePhong.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwG8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:25:25.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmBookingNew.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmBookingNew.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmBookingNew.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmBookingNew.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmBookingNew.cs",
+              "ViewState": "AgIAAOMBAAAAAAAAAAAQwP0BAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:23:44.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChiTietThuePhongBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThuePhongBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\ChiTietThuePhongBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\ChiTietThuePhongBUS.cs",
+              "RelativeToolTip": "BUS\\ChiTietThuePhongBUS.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:15:19.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BillForm.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BILL\\BillForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BILL\\BillForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BILL\\BillForm.cs",
+              "RelativeToolTip": "GUI\\GUI_BILL\\BillForm.cs",
+              "ViewState": "AgIAAKMBAAAAAAAAAADwv6QBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:12:24.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FormChart.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_THONGKE\\FormChart.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_THONGKE\\FormChart.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_THONGKE\\FormChart.cs",
+              "RelativeToolTip": "GUI\\GUI_THONGKE\\FormChart.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAmwJ0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:10:19.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HoaDonBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\HoaDonBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\HoaDonBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\HoaDonBUS.cs",
+              "RelativeToolTip": "BUS\\HoaDonBUS.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwDYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:03:19.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RoomForm.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\RoomForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROOM\\RoomForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\RoomForm.cs",
+              "RelativeToolTip": "GUI\\GUI_ROOM\\RoomForm.cs",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAQwGsBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:59:43.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ThanhToan.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\ThanhToan.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\ThanhToan.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\ThanhToan.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\ThanhToan.cs",
+              "ViewState": "AgIAAKYBAAAAAAAAAAAiwLgBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:59:15.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frmSelectRoom.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmSelectRoom.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmSelectRoom.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmSelectRoom.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmSelectRoom.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAcwEIBAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:57:44.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ItemRoom.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\ItemRoom.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROOM\\ItemRoom.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\ItemRoom.cs",
+              "RelativeToolTip": "GUI\\GUI_ROOM\\ItemRoom.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAcwDIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:57:03.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmChiTietPhieuThue.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietPhieuThue.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmChiTietPhieuThue.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietPhieuThue.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmChiTietPhieuThue.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAUwIsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:56:04.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:45:33.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingNew.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\BookingNew.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\BookingNew.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\BookingNew.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\BookingNew.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAIwLAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:44:17.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StaffForm.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\StaffForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_STAFF\\StaffForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\StaffForm.cs [Design]",
+              "RelativeToolTip": "GUI\\GUI_STAFF\\StaffForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:35:19.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmAddStaff.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\frmAddStaff.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_STAFF\\frmAddStaff.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\frmAddStaff.cs",
+              "RelativeToolTip": "GUI\\GUI_STAFF\\frmAddStaff.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAQwA4BAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:38:54.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.cs",
+              "RelativeDocumentMoniker": "GUI\\frmLogin.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.cs [Design]",
+              "RelativeToolTip": "GUI\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:37:30.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\DAO\\Database.cs",
+              "RelativeDocumentMoniker": "DAO\\Database.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\DAO\\Database.cs",
+              "RelativeToolTip": "DAO\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:30:08.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCreateAccount.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\FormCreateAccount.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROLE\\FormCreateAccount.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\FormCreateAccount.cs",
+              "RelativeToolTip": "GUI\\GUI_ROLE\\FormCreateAccount.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:02:45.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmForgotPassword.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmForgotPassword.cs",
+              "RelativeDocumentMoniker": "GUI\\frmForgotPassword.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmForgotPassword.cs",
+              "RelativeToolTip": "GUI\\frmForgotPassword.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAhwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:01:03.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\frmLogin.Designer.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.Designer.cs",
+              "RelativeToolTip": "GUI\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:56:36.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.cs",
+              "RelativeDocumentMoniker": "GUI\\frmLogin.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmLogin.cs",
+              "RelativeToolTip": "GUI\\frmLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:54:57.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmChangePassword.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmChangePassword.cs",
+              "RelativeDocumentMoniker": "GUI\\frmChangePassword.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\frmChangePassword.cs",
+              "RelativeToolTip": "GUI\\frmChangePassword.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAApwGkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:54:18.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoleForm.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\RoleForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROLE\\RoleForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROLE\\RoleForm.cs",
+              "RelativeToolTip": "GUI\\GUI_ROLE\\RoleForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:53:39.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmChiTietThue.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThue.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\frmChiTietThue.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\frmChiTietThue.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\frmChiTietThue.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAowHIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:52:58.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingList.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\BookingList.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_BOOKING\\BookingList.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_BOOKING\\BookingList.cs",
+              "RelativeToolTip": "GUI\\GUI_BOOKING\\BookingList.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAgwJwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:51:45.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmAddRoom.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\frmAddRoom.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_ROOM\\frmAddRoom.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_ROOM\\frmAddRoom.cs",
+              "RelativeToolTip": "GUI\\GUI_ROOM\\frmAddRoom.cs",
+              "ViewState": "AgIAAI0CAAAAAAAAAAAswJ0CAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:40:52.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhongBUS.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\PhongBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\PhongBUS.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\BUS\\PhongBUS.cs",
+              "RelativeToolTip": "BUS\\PhongBUS.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:40:44.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StaffForm.cs",
+              "DocumentMoniker": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\StaffForm.cs",
+              "RelativeDocumentMoniker": "GUI\\GUI_STAFF\\StaffForm.cs",
+              "ToolTip": "D:\\UNIVERSITY\\PTTKHTDN\\HotelManagerment-CSDLPT\\GUI\\GUI_STAFF\\StaffForm.cs",
+              "RelativeToolTip": "GUI\\GUI_STAFF\\StaffForm.cs",
+              "ViewState": "AgIAAGIDAAAAAAAAAAArwNEDAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:11:42.189Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\BUS.dll.config
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\BUS.dll
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\BUS.pdb
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\DAO.dll
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\DTO.dll
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\DAO.pdb
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\DAO.dll.config
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\bin\Debug\DTO.pdb
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\obj\Debug\BUS.dll
+D:\UNIVERSITY\PTTKHTDN\HotelManagerment-CSDLPT\BUS\obj\Debug\BUS.pdb
