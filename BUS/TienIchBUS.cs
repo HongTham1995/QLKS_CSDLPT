@@ -36,12 +36,14 @@ namespace BUS
 
         public void ThemTienIch(string maTI, string tenTI)
         {
-            string query = string.Format("insert into TIENICH values ('{0}',N'{1}',0)", maTI, tenTI);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("insert into TIENICH values ('{0}',N'{1}',0,'{2}')", maTI, tenTI,rowGuid);
             db.ExecuteNonQuery(query);
         }
         public void ThemTienIchPhong(string maP, string maTi, string SL)
         {
-            string query = string.Format("insert into CHITIETTIENICH values ('{0}','{1}',{2})", maP, maTi, SL);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("insert into CHITIETTIENICH values ('{0}','{1}',{2},'{3}')", maP, maTi, SL,rowGuid);
             db.ExecuteNonQuery(query);
         }
 

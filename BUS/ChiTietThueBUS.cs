@@ -33,8 +33,9 @@ namespace BUS
         // Insert mới một ChiTietThue vào server xác định
         public void InsertCTT(string serverName, string maCTT, string maKH, string maNV, string ngayLapPhieu, string tienDatCoc)
         {
-            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUE VALUES('{1}','{2}','{3}','{4}',{5},0,0)",
-                                         serverName, maCTT, maKH, maNV, ngayLapPhieu, tienDatCoc);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUE VALUES('{1}','{2}','{3}','{4}',{5},0,0,'{6}')",
+                                         serverName, maCTT, maKH, maNV, ngayLapPhieu, tienDatCoc, rowGuid);
             db.ExecuteNonQuery(query);
         }
 

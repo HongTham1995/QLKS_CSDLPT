@@ -1,75 +1,59 @@
 --SERVER1 : HÀ NỘI
 
--- Tạo Linked Server cho Huế từ Hà Nội
+-- Kết nối đến Huế
 EXEC sp_addlinkedserver 
     @server = 'Server_HUE', 
-    @srvproduct = '',
-    @provider = 'SQLNCLI',
+    @srvproduct = '', 
+    @provider = 'SQLNCLI', 
     @datasrc = 'HONGTHAM2004\SERVER05';
 
--- Tạo Linked Server cho Sài Gòn từ Hà Nội
+EXEC sp_addlinkedsrvlogin 
+    @rmtsrvname = 'Server_HUE', 
+    @useself = 'false', 
+    @locallogin = NULL, 
+    @rmtuser = 'sa', 
+    @rmtpassword = '123456';
+
+-- Kết nối đến Sài Gòn
 EXEC sp_addlinkedserver 
     @server = 'Server_SAIGON', 
-    @srvproduct = '',
-    @provider = 'SQLNCLI',
-    @datasrc = 'HONGTHAM2004\SERVER06';
-
--- Cho phép đăng nhập vào Huế
-EXEC sp_addlinkedsrvlogin 
-    @rmtsrvname = 'Server_HUE',
-    @useself = 'true';
-
--- Cho phép đăng nhập vào Sài Gòn
-EXEC sp_addlinkedsrvlogin 
-    @rmtsrvname = 'Server_SAIGON',
-    @useself = 'true';
-
---SERVER2: HUẾ
--- Tạo Linked Server cho Hà Nội từ Huế
-EXEC sp_addlinkedserver 
-    @server = 'Server_HANOI', 
-    @srvproduct = '',
-    @provider = 'SQLNCLI',
-    @datasrc = 'HONGTHAM2004\SERVER04';
-
--- Tạo Linked Server cho Sài Gòn từ Huế
-EXEC sp_addlinkedserver 
-    @server = 'Server_SAIGON', 
-    @srvproduct = '',
-    @provider = 'SQLNCLI',
+    @srvproduct = '', 
+    @provider = 'SQLNCLI', 
     @datasrc = 'HONGTHAM2004\SERVER06';
 
 EXEC sp_addlinkedsrvlogin 
-    @rmtsrvname = 'Server_HANOI',
-    @useself = 'true';
+    @rmtsrvname = 'Server_SAIGON', 
+    @useself = 'false', 
+    @locallogin = NULL, 
+    @rmtuser = 'sa', 
+    @rmtpassword = '123456';
 
 
-EXEC sp_addlinkedsrvlogin 
-    @rmtsrvname = 'Server_SAIGON',
-    @useself = 'true';
-
---SERVER3: TPHCM
--- Tạo Linked Server cho Hà Nội từ Sài Gòn
+-- Tạo linked server tới chính Hà Nội
 EXEC sp_addlinkedserver 
     @server = 'Server_HANOI', 
     @srvproduct = '',
-    @provider = 'SQLNCLI',
-    @datasrc = 'HONGTHAM2004\SERVER04';
+    @provider = 'SQLNCLI', 
+    @datasrc = 'HONGTHAM2004\SERVER07'; -- hoặc đúng tên server Hà Nội
 
--- Tạo Linked Server cho Huế từ Sài Gòn
-EXEC sp_addlinkedserver 
-    @server = 'Server_HUE', 
-    @srvproduct = '',
-    @provider = 'SQLNCLI',
-    @datasrc = 'HONGTHAM2004\SERVER05';
-
--- Cho phép đăng nhập vào Hà Nội
+-- Thêm login
 EXEC sp_addlinkedsrvlogin 
     @rmtsrvname = 'Server_HANOI',
-    @useself = 'true';
+    @useself = 'false',
+    @locallogin = NULL,
+    @rmtuser = 'sa',
+    @rmtpassword = '123456';
 
--- Cho phép đăng nhập vào Huế
-EXEC sp_addlinkedsrvlogin 
-    @rmtsrvname = 'Server_HUE',
-    @useself = 'true';
 
+
+
+
+-- Xóa login
+EXEC sp_droplinkedsrvlogin @rmtsrvname = 'Server_HANOI', @locallogin = NULL;
+EXEC sp_droplinkedsrvlogin @rmtsrvname = 'Server_SAIGON', @locallogin = NULL;
+EXEC sp_droplinkedsrvlogin @rmtsrvname = 'Server_HUE', @locallogin = NULL;
+
+-- Xóa linked server
+EXEC sp_dropserver @server = 'Server_HANOI', @droplogins = 'droplogins';
+EXEC sp_dropserver @server = 'Server_SAIGON', @droplogins = 'droplogins';
+EXEC sp_dropserver @server = 'Server_HUE', @droplogins = 'droplogins';

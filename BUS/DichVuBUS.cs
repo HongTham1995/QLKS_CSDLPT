@@ -100,9 +100,12 @@ namespace BUS
         }
         public void Them(string maDV, string tenDV, string loaiDV, int giaDV, string hinhAnh)
         {
-            string str = "INSERT INTO DichVu(maDV,tenDV,loaiDV,giaDV,hinhAnh,xuLy)  VALUES ( '" + maDV + "',N'" + tenDV + "',N'" + loaiDV + "'," + giaDV + ",N'" + hinhAnh + "',0)";
+            string rowGuid = Guid.NewGuid().ToString();
+            string str = "INSERT INTO DichVu(maDV, tenDV, loaiDV, giaDV, hinhAnh, xuLy, rowguid) " +
+                         "VALUES ('" + maDV + "', N'" + tenDV + "', N'" + loaiDV + "', " + giaDV + ", N'" + hinhAnh + "', 0, '" + rowGuid + "')";
             db.ExecuteNonQuery(str);
         }
+
         public void Sua(string maDV, string maDV2, string tenDV, string loaiDV, int giaDV, string hinhAnh)
         {
             string str = "UPDATE DichVu SET maDV='" + maDV + "',tenDV = N'" + tenDV + "',loaiDV = N'" + loaiDV + "',giaDV =" + giaDV + ",hinhAnh = N'" + hinhAnh + "' WHERE maDV = '" + maDV2 + "'";

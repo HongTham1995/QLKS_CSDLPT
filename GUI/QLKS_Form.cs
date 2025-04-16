@@ -21,6 +21,7 @@ namespace GUI
 {
     public partial class QLKS_Form : Form
     {
+        string sever = Program.ServerName;
         public QLKS_Form()
         {
             InitializeComponent();
@@ -315,7 +316,7 @@ namespace GUI
             home.Show();
             ChucNangBUS cn = new ChucNangBUS();
             TaiKhoanBUS tkbus = new TaiKhoanBUS();
-            TaiKhoanDTO tk = tkbus.GetTKNV(Program.nhanVien.MaNV);
+            TaiKhoanDTO tk = tkbus.GetTKNV(sever,Program.nhanVien.MaNV);
             DataTable dt = cn.GetTBChucNang(tk.MaPQ);
             if (bool.Parse(dt.Rows[0][2].ToString()) != true)
             {

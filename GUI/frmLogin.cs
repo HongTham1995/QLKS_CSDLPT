@@ -66,7 +66,7 @@ namespace GUI
             taiKhoan = new TaiKhoanBUS();
             nhanVien = new NhanVienBUS();
             this.ActiveControl = null;
-            var item = from taikhoan in taiKhoan.GetListTaiKhoan()
+            var item = from taikhoan in taiKhoan.getTAIKHOAN_3CN()
                        join nhanvien in nhanVien.getNhanVien_3CN() on taikhoan.MaNV equals nhanvien.MaNV
                        select new
                        {

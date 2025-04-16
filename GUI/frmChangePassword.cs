@@ -17,6 +17,7 @@ namespace GUI
     {
         TaiKhoanBUS taiKhoan = new TaiKhoanBUS();
         NhanVienBUS nhanVien = new NhanVienBUS();
+        string sever = Program.ServerName;
         public frmChangePassword()
         {
             InitializeComponent();
@@ -102,7 +103,7 @@ namespace GUI
                 txtPassNew.Focus();
                 return;
             }
-            var item = from taikhoan in taiKhoan.GetListTaiKhoan()
+            var item = from taikhoan in taiKhoan.getTAIKHOAN_3CN()
                        join nhanvien in nhanVien.getNhanVien_3CN() on taikhoan.MaNV equals nhanvien.MaNV
                        select new
                        {
@@ -152,7 +153,7 @@ namespace GUI
                                     string matKhau = GetHash(txtPassNew.Text);
                                     try
                                     {
-                                        taiKhoan.SuaMatKhau(txtTK.Text, matKhau);
+                                        taiKhoan.SuaMatKhau(sever,txtTK.Text, matKhau);
                                         MessageBoxDialog message = new MessageBoxDialog();
                                         message.ShowDialog("Thông báo", "Thành công", "Đổi mật khẩu thành công vui lòng đăng nhập", MessageBoxDialog.SUCCESS, MessageBoxDialog.YES, "Đóng", "", "");
                                         this.Hide();

@@ -21,7 +21,8 @@ namespace BUS
         }
         public void ThemPhanQuyen(string maPQ, string tenPQ)
         {
-            string query = "insert into PhanQuyen values ('" + maPQ + "',N'" + tenPQ + "')";
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = "insert into PhanQuyen values ('" + maPQ + "', N'" + tenPQ + "', '" + rowGuid + "')";
             db.ExecuteNonQuery(query);
         }
         public int GetCountPQ()

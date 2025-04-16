@@ -43,8 +43,9 @@ namespace BUS
         // Thêm mới chi tiết thuê dịch vụ vào server xác định
         public void ThemCTTDV(string serverName, string maCTT, string maDV, string ngaySuDung, string soLuong, string giaDV)
         {
-            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEDICHVU VALUES ('{1}','{2}','{3}',{4},{5})",
-                                         serverName, maCTT, maDV, ngaySuDung, soLuong, giaDV);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEDICHVU VALUES ('{1}','{2}','{3}',{4},{5},'{6}')",
+                                         serverName, maCTT, maDV, ngaySuDung, soLuong, giaDV,rowGuid);
             db.ExecuteNonQuery(query);
         }
 

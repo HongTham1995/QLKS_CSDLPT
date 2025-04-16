@@ -19,6 +19,7 @@ namespace GUI.GUI_ROLE
         NhanVienBUS nv = new NhanVienBUS();
         string maNV;
         int option = 0;
+        string sever = Program.ServerName;
         public FormCreateAccount(string maNV)
         {
             InitializeComponent();
@@ -38,7 +39,7 @@ namespace GUI.GUI_ROLE
             textBox1.Text = tenTK;
             buttonRounded1.Text = "Đổi phân quyền";
             TaiKhoanBUS tkBus = new TaiKhoanBUS();
-            TaiKhoanDTO taiKhoanDTO = tkBus.GetTK(tenTK);
+            TaiKhoanDTO taiKhoanDTO = tkBus.GetTK(sever,tenTK);
             comboBox1.SelectedValue = taiKhoanDTO.MaPQ;
             label1.Text = "XEM PHÂN QUYỀN";
         }
@@ -79,7 +80,7 @@ namespace GUI.GUI_ROLE
                 TaiKhoanBUS taiKhoan = new TaiKhoanBUS();
                 try
                 {
-                    taiKhoan.ThemTaiKhoan(textBox1.Text.Trim(), maNV, comboBox1.SelectedValue.ToString(), frmChangePassword.GetHash(nhanVien.NgaySinh.ToString("ddMMyyyy")), "0");
+                    taiKhoan.ThemTaiKhoan(sever,textBox1.Text.Trim(), maNV, comboBox1.SelectedValue.ToString(), frmChangePassword.GetHash(nhanVien.NgaySinh.ToString("ddMMyyyy")), "0");
                     this.DialogResult = DialogResult.Yes;
                 }
                 catch(Exception)
@@ -96,7 +97,7 @@ namespace GUI.GUI_ROLE
                 if(ans == MessageBoxDialog.YES_OPTION)
                 {
                     TaiKhoanBUS taiKhoan = new TaiKhoanBUS();
-                    taiKhoan.SuaPhanQuyen(textBox1.Text.Trim(), comboBox1.SelectedValue.ToString());
+                    taiKhoan.SuaPhanQuyen(sever,textBox1.Text.Trim(), comboBox1.SelectedValue.ToString());
                     this.DialogResult = DialogResult.Yes;
                 }
             }

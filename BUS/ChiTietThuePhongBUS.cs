@@ -31,18 +31,19 @@ namespace BUS
         // Insert chi tiết thuê phòng (có trường hợp check có giá trị null cho ngayTra, ngayCheckOut)
         public void InsertCTTP(string serverName, bool check, string maCTT, string maP, string ngayThue, string ngayTra, string loaiHinhThue, string giaThue)
         {
+            string rowGuid = Guid.NewGuid().ToString();
             if (check)
             {
                 // Nếu check = true: insert với giá trị ngayThue, ngayTra (với ngayTra có giá trị) và giá trị kia, null cho những cột không cần
-                string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEPHONG VALUES ('{1}','{2}','{3}','{4}',NULL,{5},{6},0)",
-                                             serverName, maCTT, maP, ngayThue, ngayTra, loaiHinhThue, giaThue);
+                string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEPHONG VALUES ('{1}','{2}','{3}','{4}',NULL,{5},{6},0,'{7}')",
+                                             serverName, maCTT, maP, ngayThue, ngayTra, loaiHinhThue, giaThue,rowGuid);
                 db.ExecuteNonQuery(query);
             }
             else
             {
                 // Nếu check = false: insert với ngayTra = null
-                string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEPHONG VALUES ('{1}','{2}','{3}',NULL,NULL,{4},{5},0)",
-                                             serverName, maCTT, maP, ngayThue, loaiHinhThue, giaThue);
+                string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.CHITIETTHUEPHONG VALUES ('{1}','{2}','{3}',NULL,NULL,{4},{5},0,'{6}')",
+                                             serverName, maCTT, maP, ngayThue, loaiHinhThue, giaThue,rowGuid);
                 db.ExecuteNonQuery(query);
             }
         }

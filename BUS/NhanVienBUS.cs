@@ -31,10 +31,10 @@ namespace BUS
         {
             string ns = nv.NgaySinh.ToString("yyyy-MM-dd");
             string nvl = nv.NgayVaoLam.ToString("yyyy-MM-dd");
-
+            string rowGuid = Guid.NewGuid().ToString();
             string query = $@"INSERT INTO {serverName}.QLKS_PT.dbo.NHANVIEN 
             VALUES ('{nv.MaNV}', N'{nv.TenNV}', {nv.GioiTinh}, {nv.SoNgayPhep}, {nv.ChucVu}, 
-                    '{ns}', '{nvl}', '{nv.Email}', {nv.Luong1Ngay}, 0, '{nv.MaCN}')";
+                    '{ns}', '{nvl}', '{nv.Email}', {nv.Luong1Ngay}, 0, '{nv.MaCN}', '{rowGuid}')";
             db.ExecuteNonQuery(query);
         }
 

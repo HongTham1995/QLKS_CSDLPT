@@ -39,7 +39,7 @@ namespace GUI.GUI_ROLE
             
             tbAccount.Rows.Clear();
             List<NhanVienDTO> listNV = nv.getDSNhanVien(sever);
-            List<TaiKhoanDTO> listTK = tk.GetListTaiKhoan();
+            List<TaiKhoanDTO> listTK = tk.GetListTaiKhoan(sever);
             var item = from nv in listNV
                        join tk in listTK on nv.MaNV equals tk.MaNV into gj
                        from subtk in gj.DefaultIfEmpty()
@@ -150,7 +150,7 @@ namespace GUI.GUI_ROLE
                     if (!tbAccount.SelectedRows[0].Cells[3].Value.ToString().Equals("Chưa có"))
                     {
                         TaiKhoanBUS tk = new TaiKhoanBUS();
-                        tk.XoaTaiKhoan(tbAccount.SelectedRows[0].Cells[3].Value.ToString());
+                        tk.XoaTaiKhoan(sever,tbAccount.SelectedRows[0].Cells[3].Value.ToString());
                         MessageBoxDialog messageSuccess = new MessageBoxDialog();
                         messageSuccess.ShowDialog("Thông báo", "Thành công", "Xóa tài khoản này thành công", MessageBoxDialog.SUCCESS, MessageBoxDialog.YES, "Đóng", "", "");
                         HienThiAccount("");
@@ -177,7 +177,7 @@ namespace GUI.GUI_ROLE
                 var tenTK = tbAccount.SelectedRows[0].Cells[3].Value.ToString();
                 if (!tenTK.Equals("Chưa có"))
                 {
-                    tk.KhoaTaiKhoan(tenTK);
+                    tk.KhoaTaiKhoan(sever,tenTK);
                     MessageBoxDialog messageSuccess = new MessageBoxDialog();
                     messageSuccess.ShowDialog("Thông báo", "Thành công", "Khóa tài khoản này thành công", MessageBoxDialog.SUCCESS, MessageBoxDialog.YES, "Đóng", "", "");
                     HienThiAccount("");
@@ -212,7 +212,7 @@ namespace GUI.GUI_ROLE
             if (tbAccount.SelectedRows.Count > 0)
             {
                 TaiKhoanBUS tk = new TaiKhoanBUS();
-                tk.MoKhoaTaiKhoan(tbAccount.SelectedRows[0].Cells[3].Value.ToString());
+                tk.MoKhoaTaiKhoan(sever, tbAccount.SelectedRows[0].Cells[3].Value.ToString());
                 MessageBoxDialog messageSuccess = new MessageBoxDialog();
                 messageSuccess.ShowDialog("Thông báo", "Thành công", "Mở khóa tài khoản này thành công", MessageBoxDialog.SUCCESS, MessageBoxDialog.YES, "Đóng", "", "");
                 HienThiAccount("");

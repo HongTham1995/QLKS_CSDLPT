@@ -23,7 +23,7 @@ namespace DAO
         // SELECT * FROM Server_HUE.QLKS_CN02.dbo.NHANVIEN
         // UNION ALL
         // SELECT * FROM Server_SAIGON.QLKS_CN03.dbo.NHANVIEN
-        private string centralConnString = @"Server=HONGTHAM2004\SERVER04;Database=QLKS_PT;User ID=sa;Password=123456;TrustServerCertificate=True;";
+        private string centralConnString = @"Server=HONGTHAM2004\SERVER06;Database=QLKS_PT;User ID=sa;Password=123456;TrustServerCertificate=True;";
 
         public Database()
         {

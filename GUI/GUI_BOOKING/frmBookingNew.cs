@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Text;
+using System.Threading;
 
 namespace GUI.GUI_BOOKING
 {
@@ -20,8 +21,8 @@ namespace GUI.GUI_BOOKING
         KhachHangBUS kh = new KhachHangBUS();
         ChiTietThueBUS ctt = new ChiTietThueBUS();
         ChiTietThuePhongBUS cttp = new ChiTietThuePhongBUS();
-        string sever = Program.ServerName;
         public DataTable dt;
+        string sever = Program.ServerName;
         public frmBookingNew()
         {
             InitializeComponent();
@@ -394,6 +395,17 @@ namespace GUI.GUI_BOOKING
                             {
                                 textBox4.Text = "0";
                             }
+                            
+                            Thread.Sleep(1000); // cho hệ thống sync
+
+                            if (!kh.CheckMaKHExists(txtMaKH.Text))
+                            {
+                                MessageBox.Show("Chờ mã khách hàng đồng bộ thất bại.");
+                                return;
+                            }
+
+                            
+
                             ctt.InsertCTT(sever,txtMaCTT.Text.Trim(), txtMaKH.Text.Trim(), Program.nhanVien.MaNV, DateTime.ParseExact(txtNgayLap.Text.Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss"), textBox4.Text);
                             for (int i = 0; i < dt.Rows.Count; i++)
                             {

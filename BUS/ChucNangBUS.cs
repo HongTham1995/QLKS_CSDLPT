@@ -27,8 +27,10 @@ namespace BUS
         }
         public void ThemChucNang(string maPQ, string maChucNang)
         {
-            string query = "insert into CHITIETCHUCNANG values ('" + maPQ + "','" + maChucNang + "')";
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = "insert into CHITIETCHUCNANG values ('" + maPQ + "','" + maChucNang + "','" + rowGuid + "')";
             db.ExecuteNonQuery(query);
         }
+
     }
 }

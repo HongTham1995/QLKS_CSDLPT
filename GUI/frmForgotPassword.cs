@@ -10,6 +10,7 @@ namespace GUI
     public partial class frmForgotPassword : Form
     {
         NhanVienBUS nv = new NhanVienBUS();
+        string sever = Program.ServerName;
         public frmForgotPassword()
         {
             InitializeComponent();
@@ -74,7 +75,7 @@ namespace GUI
         private async void buttonRounded3_Click(object sender, EventArgs e)
         {
             TaiKhoanBUS tkBUS = new TaiKhoanBUS();
-            TaiKhoanDTO tkDTO = tkBUS.GetTK(txtTK.Text);
+            TaiKhoanDTO tkDTO = tkBUS.GetTK(sever,txtTK.Text);
             
             if (!string.IsNullOrEmpty(tkDTO.TaiKhoan))
             {
@@ -123,8 +124,8 @@ namespace GUI
                     return;
                 }
                 TaiKhoanBUS tkBUS = new TaiKhoanBUS();
-                TaiKhoanDTO tkDTO = tkBUS.GetTK(txtTK.Text);
-                tkBUS.SuaMatKhau(tkDTO.TaiKhoan, frmChangePassword.GetHash(txtMKMoi.Text));
+                TaiKhoanDTO tkDTO = tkBUS.GetTK(sever, txtTK.Text);
+                tkBUS.SuaMatKhau(sever, tkDTO.TaiKhoan, frmChangePassword.GetHash(txtMKMoi.Text));
                 MessageBoxDialog message1 = new MessageBoxDialog();
                 message1.ShowDialog("Thành công", "", "Đổi mật khẩu thành công", MessageBoxDialog.SUCCESS, MessageBoxDialog.YES, "OK", "", "");
 

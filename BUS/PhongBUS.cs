@@ -39,10 +39,12 @@ namespace BUS
         // Thêm phòng mới vào server cụ thể
         public void ThemPhong(string serverName, string maP, string tenP, string loaiP, string giaP, string chiTietLoaiP, string tinhTrang, string hienTrang, string maCN)
         {
+            string rowGuid = Guid.NewGuid().ToString();
             string query = "INSERT INTO " + $"{serverName}.QLKS_PT.dbo.PHONG " +
-                           "(maP, tenP, loaiP, giaP, chiTietLoaiP, tinhTrang, hienTrang, xuLy, MaCN) " +
-                           "VALUES ('" + maP + "', N'" + tenP + "', " + loaiP + ", " + giaP + ", " + chiTietLoaiP +
-                           ", " + tinhTrang + ", " + hienTrang + ", 0, '" + maCN + "')";
+               "(maP, tenP, loaiP, giaP, chiTietLoaiP, tinhTrang, hienTrang, xuLy, MaCN, rowquid) " +
+               "VALUES ('" + maP + "', N'" + tenP + "', " + loaiP + ", " + giaP + ", " + chiTietLoaiP +
+               ", " + tinhTrang + ", " + hienTrang + ", 0, '" + maCN + "', '" + rowGuid + "')";
+
             db.ExecuteNonQuery(query);
         }
 

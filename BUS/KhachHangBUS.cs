@@ -7,6 +7,7 @@ using DAO;
 using System.Data;
 using static System.Net.Mime.MediaTypeNames;
 using DTO;
+using System.Data.SqlClient;
 
 namespace BUS
 {
@@ -31,14 +32,7 @@ namespace BUS
             return db.ExecuteNonQuery_getInteger(query);
         }
 
-        public void addKhachHang(string makh, string tenkh, string cmnd, int gioitinh, string sdt, string quequan, string quoctich, DateTime ngaysinh)
-        {
-            var ns = ngaysinh.ToString("yyyy-MM-dd");
-            //string query = string.Format("insert into KHACHHANG values ('{0}',N'{1}', {2},N {3}, {4}, N'{5}', N'{6}', '{7}', 0)", makh, tenkh, cmnd, gioitinh, sdt, quequan, quoctich, ns);
-            string temp = "INSERT INTO KHACHHANG values maKH = \'" + makh + "\', tenKH = N\'" + tenkh + "\', CMND = \'" + cmnd + "\', gioiTinh = " + gioitinh + ", sDT = \'" + sdt + "\', queQuan = N\'" + quequan + "\', quocTich = N\'" + quoctich + "\', ngaySinh = \'" + ngaysinh + "\' ";
-            string query = string.Format(temp);
-            db.ExecuteNonQuery(query);
-        }
+        
 
         public DataTable findKhachHang(string makh, string tenkh, string cmnd, int gioitinh, string sdt, string quequan, string quoctich, DateTime ngaysinhtu, DateTime ngaysinhden)
         {
@@ -109,7 +103,8 @@ namespace BUS
 
         public void InsertKhachHang(string maKH, string tenKh, string CMND, string gioiTinh, string sDT, string queQuan, string quocTich, string ngaySinh)
         {
-            string query = string.Format("insert into KhachHang values ('{0}',N'{1}','{2}',{3},'{4}',N'{5}',N'{6}','{7}',0)", maKH, tenKh, CMND, gioiTinh, sDT, queQuan, quocTich, ngaySinh);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("insert into KhachHang values ('{0}',N'{1}','{2}',{3},'{4}',N'{5}',N'{6}','{7}',0,'{8}')", maKH, tenKh, CMND, gioiTinh, sDT, queQuan, quocTich, ngaySinh,rowGuid);
             db.ExecuteNonQuery(query);
         }
         public int SoLanThue(string maKH)
@@ -117,5 +112,17 @@ namespace BUS
             string query = "select count(chiTietthue.maKH) from CHITIETTHUE, KHACHHANG \r\nwhere CHITIETTHUE.maKH = KHACHHANG.maKH and Chitietthue.maKH = '" + maKH + "'";
             return db.ExecuteNonQuery_getInteger(query);
         }
+
+        public bool CheckMaKHExists(string maKH)
+        {
+            bool exists = false;
+
+            string query = $"SELECT COUNT(*) FROM KHACHHANG WHERE maKH = '{maKH}'";
+
+            exists = db.ExecuteNonQuery_getInteger(query) > 0;
+
+            return exists;
+        }
+
     }
 }

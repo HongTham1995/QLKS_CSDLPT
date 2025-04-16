@@ -24,8 +24,9 @@ namespace BUS
         // Thêm hóa đơn mới vào server xác định
         public void ThemHoaDon(string serverName, string maHD, string maCTT, string giamGia, string phuThu, string ngayThanhToan, string pttt)
         {
-            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.HOADON VALUES('{1}','{2}',{3},{4},'{5}',{6},0)",
-                                          serverName, maHD, maCTT, giamGia, phuThu, ngayThanhToan, pttt);
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format("INSERT INTO {0}.QLKS_PT.dbo.HOADON VALUES('{1}','{2}',{3},{4},'{5}',{6},0,'{7}')",
+                                          serverName, maHD, maCTT, giamGia, phuThu, ngayThanhToan, pttt,rowGuid);
             db.ExecuteNonQuery(query);
         }
 
