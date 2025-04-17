@@ -70,7 +70,7 @@ namespace GUI.GUI_BOOKING
         private void HienThiChiTietThuePhong()
         {
             tbRoom.Rows.Clear();
-            List<ChiTietThuePhongDTO> cttps = cttP.GetDSListCTTP(maCTT);
+            List<ChiTietThuePhongDTO> cttps = cttP.GetDSListCTTP(sever);
             List<PhongDTO> phongs = phong.getListPhong_DTO(sever);
             var items = from cttp in cttps
                         join phong in phongs on cttp.MaP equals phong.MaP

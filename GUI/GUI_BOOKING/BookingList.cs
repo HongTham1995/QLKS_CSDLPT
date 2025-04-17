@@ -17,7 +17,7 @@ namespace GUI.GUI_BOOKING
         KhachHangBUS khachHang = new KhachHangBUS();
         NhanVienBUS nhanVien = new NhanVienBUS();
         ChiTietThueBUS chiTietThue = new ChiTietThueBUS();
-        string maCN = Program.nhanVien.MaCN;
+        
         string sever = Program.ServerName;
         public BookingList()
         {
@@ -29,7 +29,7 @@ namespace GUI.GUI_BOOKING
         {
             
             var cttAll = from ctt in chiTietThue.getDSChiTietThue(sever)
-                         join kh in khachHang.GetDSKH() on ctt.MaKH equals kh.MaKH
+                         join kh in khachHang.GetDSKH(sever) on ctt.MaKH equals kh.MaKH
                          join nv in nhanVien.getDSNhanVien(sever) on ctt.MaNV equals nv.MaNV
                          where ctt.XuLy == 0
                          orderby ctt.TinhTrangXuLy ascending, ctt.NgayLapPhieu ascending
@@ -168,7 +168,7 @@ namespace GUI.GUI_BOOKING
         {
             
             var list = from ctt in chiTietThue.getDSChiTietThue(sever)
-                         join kh in khachHang.GetDSKH() on ctt.MaKH equals kh.MaKH
+                         join kh in khachHang.GetDSKH(sever) on ctt.MaKH equals kh.MaKH
                          join nv in nhanVien.getDSNhanVien(sever) on ctt.MaNV equals nv.MaNV
                          where ctt.XuLy == 0
                          orderby ctt.TinhTrangXuLy ascending, ctt.NgayLapPhieu ascending

@@ -105,7 +105,7 @@ namespace GUI.GUI_BOOKING
         private void cbMaCTT_SelectedIndexChanged(object sender, EventArgs e)
         {
             var maCN = Program.nhanVien.MaCN;
-            var sever = nhanVien.GetServerNameFromMaCN(maCN);
+            
             if (cbMaCTT.SelectedIndex == -1)
             {
                 ResetInformation();
@@ -113,7 +113,7 @@ namespace GUI.GUI_BOOKING
             else
             {
                 var info = from ctt in cttBus.getDSChiTietThue(sever)
-                           join kh in khachHang.GetDSKH() on ctt.MaKH equals kh.MaKH
+                           join kh in khachHang.GetDSKH(sever) on ctt.MaKH equals kh.MaKH
                            join nv in nhanVien.getDSNhanVien(sever) on ctt.MaNV equals nv.MaNV
                            where ctt.XuLy == 0
                            select new

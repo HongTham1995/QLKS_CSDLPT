@@ -13,6 +13,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace GUI.GUI_BOOKING
 {
@@ -123,7 +124,7 @@ namespace GUI.GUI_BOOKING
             }
             else
             {
-                List<KhachHangDTO> list = kh.GetDSKH();
+                List<KhachHangDTO> list = kh.GetDSKH(sever);
                 var khachhangs = from khachhang in list
                                  where khachhang.CMND.Equals(txtCMND.Text.Trim())
                                  select khachhang;
@@ -381,13 +382,13 @@ namespace GUI.GUI_BOOKING
                                 {
                                     txtMaKH.Text = "KH" + "0" + dateNgaySinh.Value.ToString("ddMMyy") + kh.GetCountAllKH().ToString("D6");
                                     string diaChi = txtDuong.Text.Trim() + "," + txtPhuong.Text.Trim() + "," + txtQuan.Text.Trim() + "," + txtThanhPho.Text.Trim();
-                                    kh.InsertKhachHang(txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "0", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
+                                    kh.InsertKhachHang(sever,txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "0", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
                                 }
                                 else
                                 {
                                     txtMaKH.Text = "KH" + "1" + dateNgaySinh.Value.ToString("ddMMyy") + kh.GetCountAllKH().ToString("D6");
                                     string diaChi = txtDuong.Text.Trim() + "," + txtPhuong.Text.Trim() + "," + txtQuan.Text.Trim() + "," + txtThanhPho.Text.Trim();
-                                    kh.InsertKhachHang(txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "1", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
+                                    kh.InsertKhachHang(sever,txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "1", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
                                 }
                             }
                             timerClock.Stop();
@@ -396,17 +397,10 @@ namespace GUI.GUI_BOOKING
                                 textBox4.Text = "0";
                             }
                             
-                            Thread.Sleep(1000); // cho hệ thống sync
-
-                            if (!kh.CheckMaKHExists(txtMaKH.Text))
-                            {
-                                MessageBox.Show("Chờ mã khách hàng đồng bộ thất bại.");
-                                return;
-                            }
-
                             
-
-                            ctt.InsertCTT(sever,txtMaCTT.Text.Trim(), txtMaKH.Text.Trim(), Program.nhanVien.MaNV, DateTime.ParseExact(txtNgayLap.Text.Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss"), textBox4.Text);
+                             ctt.InsertCTT(sever, txtMaCTT.Text.Trim(), txtMaKH.Text.Trim(), Program.nhanVien.MaNV, DateTime.ParseExact(txtNgayLap.Text.Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd HH:mm:ss"), textBox4.Text);
+                            
+                            
                             for (int i = 0; i < dt.Rows.Count; i++)
                             {
                                 if (dt.Rows[i][3].ToString().ToUpper().Equals("THEO NGÀY"))
@@ -499,13 +493,13 @@ namespace GUI.GUI_BOOKING
                             {
                                 txtMaKH.Text = "KH" + "0" + dateNgaySinh.Value.ToString("ddMMyy") + kh.GetCountAllKH().ToString("D6");
                                 string diaChi = txtDuong.Text.Trim() + "," + txtPhuong.Text.Trim() + "," + txtQuan.Text.Trim() + "," + txtThanhPho.Text.Trim();
-                                kh.InsertKhachHang(txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "0", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
+                                kh.InsertKhachHang(sever, txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "0", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
                             }
                             else
                             {
                                 txtMaKH.Text = "KH" + "1" + dateNgaySinh.Value.ToString("ddMMyy") + kh.GetCountAllKH().ToString("D6");
                                 string diaChi = txtDuong.Text.Trim() + "," + txtPhuong.Text.Trim() + "," + txtQuan.Text.Trim() + "," + txtThanhPho.Text.Trim();
-                                kh.InsertKhachHang(txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "1", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
+                                kh.InsertKhachHang(sever, txtMaKH.Text.Trim(), txtTenKH.Text.Trim(), txtCMND.Text.Trim(), "1", txtSDT.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""), diaChi, txtQuocTich.Text, dateNgaySinh.Value.ToString("yyyy-MM-dd"));
                             }
                         }
                         timerClock.Stop();

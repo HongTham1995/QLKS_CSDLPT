@@ -88,23 +88,23 @@ namespace BUS
             string query = string.Format("update KHACHHANG set tenKH = N'{0}', CMND = '{1}', gioiTinh = {2}, sDT = '{3}', queQuan = N'{4}', quocTich = N'{5}', ngaySinh = '{6}' where maKH = '{7}'", tenKH, cmnd, gioiTinh, sdt, queQuan, quocTich, ngaySinh, maKH);
             db.ExecuteNonQuery(query);
         }
-
-        public List<KhachHangDTO> GetDSKH()
+        
+        public List<KhachHangDTO> GetDSKH(string serverName)
         {
-            string query = "select * from khachHang";
+            string query = $"select * from {serverName}.QLKS_PT.dbo.KHACHHANG";
             return db.getListKH_DTO(query);
         }
 
         public int GetCountAllKH()
         {
-            string query = "Select Count(maKH)+1 from KhachHang";
+            string query = "Select Count(maKH)+1 from KHACHHANG";
             return db.ExecuteNonQuery_getInteger(query);
         }
 
-        public void InsertKhachHang(string maKH, string tenKh, string CMND, string gioiTinh, string sDT, string queQuan, string quocTich, string ngaySinh)
+        public void Insert_KhachHang(string maKH, string tenKh, string CMND, string gioiTinh, string sDT, string queQuan, string quocTich, string ngaySinh)
         {
             string rowGuid = Guid.NewGuid().ToString();
-            string query = string.Format("insert into KhachHang values ('{0}',N'{1}','{2}',{3},'{4}',N'{5}',N'{6}','{7}',0,'{8}')", maKH, tenKh, CMND, gioiTinh, sDT, queQuan, quocTich, ngaySinh,rowGuid);
+            string query = string.Format("insert into KHACHHANG values ('{0}',N'{1}','{2}',{3},'{4}',N'{5}',N'{6}','{7}',0,'{8}')", maKH, tenKh, CMND, gioiTinh, sDT, queQuan, quocTich, ngaySinh,rowGuid);
             db.ExecuteNonQuery(query);
         }
         public int SoLanThue(string maKH)
@@ -113,16 +113,43 @@ namespace BUS
             return db.ExecuteNonQuery_getInteger(query);
         }
 
-        public bool CheckMaKHExists(string maKH)
+        public string GetDSKH_LienKet(string linkedServerName,string maKH)
         {
-            bool exists = false;
+            string query = $"SELECT * FROM {linkedServerName}.QLKS_PT.dbo.KHACHHANG";
+            List<KhachHangDTO> danhSachKH = db.getListKH_DTO(query);
+            foreach (KhachHangDTO kh in danhSachKH)
+            {
+                if (kh.MaKH == maKH)
+                {
+                    return kh.MaKH;
+                }
+            }
 
-            string query = $"SELECT COUNT(*) FROM KHACHHANG WHERE maKH = '{maKH}'";
-
-            exists = db.ExecuteNonQuery_getInteger(query) > 0;
-
-            return exists;
+            return null;
         }
+
+
+        public void InsertKhachHang(string sever, string maKH, string tenKh, string CMND, string gioiTinh, string sDT, string queQuan, string quocTich, string ngaySinh)
+        {
+            string rowGuid = Guid.NewGuid().ToString();
+            string query = string.Format(
+                "INSERT INTO [{0}].QLKS_PT.dbo.KHACHHANG " +
+                "VALUES ('{1}', N'{2}', '{3}', {4}, '{5}', N'{6}', N'{7}', '{8}', 0, '{9}')",
+                sever,        // {0}
+                maKH,         // {1}
+                tenKh,        // {2}
+                CMND,         // {3}
+                gioiTinh,     // {4}
+                sDT,          // {5}
+                queQuan,      // {6}
+                quocTich,     // {7}
+                ngaySinh,     // {8}
+                rowGuid       // {9}
+            );
+
+            db.ExecuteNonQuery(query);
+        }
+
 
     }
 }

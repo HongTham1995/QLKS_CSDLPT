@@ -35,7 +35,7 @@ namespace GUI.GUI_BOOKING
             HienThiChiTietThuePhong();
             this.DialogResult = DialogResult.Cancel;
             List<ChiTietThueDTO> listCTT = ctt.getDSChiTietThue(sever);
-            List<KhachHangDTO> listKH = kh.GetDSKH();
+            List<KhachHangDTO> listKH = kh.GetDSKH(sever);
             var item = from ctt in listCTT
                        join kh in listKH on ctt.MaKH equals kh.MaKH
                        where ctt.MaCTT == maCTT
@@ -102,7 +102,7 @@ namespace GUI.GUI_BOOKING
         private void HienThiChiTietThuePhong()
         {
             tbRoom.Rows.Clear();
-            List<ChiTietThuePhongDTO> cttps = cttP.GetDSListCTTP(maCTT);
+            List<ChiTietThuePhongDTO> cttps = cttP.GetDSListCTTP(sever);
             List<PhongDTO> phongs = phong.getListPhong_DTO(sever);
             var items = from cttp in cttps
                         join phong in phongs on cttp.MaP equals phong.MaP
@@ -442,7 +442,7 @@ namespace GUI.GUI_BOOKING
                 #endregion
 
                 #region Xóa các phòng không thuê
-                List<ChiTietThuePhongDTO> cttTP = cttP.GetDSListCTTP(maCTT);
+                List<ChiTietThuePhongDTO> cttTP = cttP.GetDSListCTTP(sever);
                 ChiTietThuePhongBUS cttPhongBus = new ChiTietThuePhongBUS();
                 foreach (ChiTietThuePhongDTO ct in cttTP)
                 {

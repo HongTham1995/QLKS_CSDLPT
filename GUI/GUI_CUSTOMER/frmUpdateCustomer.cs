@@ -20,13 +20,14 @@ namespace GUI.GUI_CUSTOMER
     public partial class frmUpdateCustomer : Form
     {
         KhachHangBUS kh = new KhachHangBUS();
+        string sever = Program.ServerName;
         public frmUpdateCustomer(string maKH)
         {
             InitializeComponent();
             this.DialogResult = DialogResult.Cancel;
             txtCMND.MaxLength = 12;
             KhachHangDTO khTmp = new KhachHangDTO();
-            foreach(KhachHangDTO x in kh.GetDSKH())
+            foreach(KhachHangDTO x in kh.GetDSKH(sever))
             {
                 if(x.MaKH.Equals(maKH))
                 {

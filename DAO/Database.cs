@@ -16,13 +16,7 @@ namespace DAO
         SqlDataAdapter da;
         DataSet ds;
 
-        // Sử dụng chuỗi kết nối đến server trung tâm, nơi đã được cấu hình các Linked Server
-        // Ví dụ, connString này trỏ đến database QLKS_PT, và từ đây bạn có thể gọi:
-        // SELECT * FROM QLKS_CN01.dbo.NHANVIEN
-        // UNION ALL
-        // SELECT * FROM Server_HUE.QLKS_CN02.dbo.NHANVIEN
-        // UNION ALL
-        // SELECT * FROM Server_SAIGON.QLKS_CN03.dbo.NHANVIEN
+        
         private string centralConnString = @"Server=HONGTHAM2004\SERVER06;Database=QLKS_PT;User ID=sa;Password=123456;TrustServerCertificate=True;";
 
         public Database()
