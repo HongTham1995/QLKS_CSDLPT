@@ -14,32 +14,49 @@ namespace GUI.GUI_THONGKE
 {
     public partial class FormChart : Form
     {
+        String sever = Program.ServerName;
         Font fontTitle = new Font("Segoe UI", 10f, FontStyle.Bold);
         Font font = new Font("Segoe UI", 9f);
         HoaDonBUS hd = new HoaDonBUS();
-        string sever = Program.ServerName;
+        
         public FormChart()
         {
             try
             {
                 InitializeComponent();
-                lbTongDoanhThuDichVu.Text = hd.TongTienDV(sever).ToString("###,###0 VNĐ");
-                lbTongTienDichVuPhanTich.Text = hd.TongTienDV(sever).ToString("###,###0 VNĐ");
+
+                this.Load += FormChart_Load; // đăng ký event Load
+            }
+            catch (Exception) { }
+        }
+
+        private async void FormChart_Load(object sender, EventArgs e)
+        {
+            try
+            {
+               
                 lbTongDoanhThuPhong.Text = hd.TongTienPhong(sever).ToString("###,###0 VNĐ");
                 lbTongTienPhongPhanTich.Text = hd.TongTienPhong(sever).ToString("###,###0 VNĐ");
-
+                lbTongDoanhThuDichVu.Text = hd.TongTienDV(sever).ToString("###,###0 VNĐ");
+                lbTongTienDichVuPhanTich.Text = hd.TongTienDV(sever).ToString("###,###0 VNĐ");
                 lbTongDoanhThu.Text = hd.TongDoanhThu(sever).ToString("###,###0 VNĐ");
                 lbTongDoanhThuPhanTich.Text = hd.TongDoanhThu(sever).ToString("###,###0 VNĐ");
 
                 lbTongPhuThuPhanTich.Text = hd.TongPhuThu(sever).ToString("###,###0 VNĐ");
                 lbTongGiamGiaThanhToan.Text = hd.TongGiamGia(sever).ToString("###,###0 VNĐ");
+
+
                 BieuDoPhongLoad(DateTime.Now.ToString("yyyy-MM-dd"), DateTime.Now.ToString("yyyy-MM-dd"));
                 BieuDoLoaiPhongLoad(DateTime.Now.ToString("yyyy-MM-dd"), DateTime.Now.ToString("yyyy-MM-dd"));
                 BieuDoThongKeThangLoad(int.Parse(DateTime.Now.ToString("MM")), int.Parse(DateTime.Now.ToString("yyyy")));
                 BieuDoThongKeNamLoad(int.Parse(DateTime.Now.ToString("yyyy")));
             }
-            catch (Exception) { }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi load dữ liệu: " + ex.Message);
+            }
         }
+
         void BieuDoPhongLoad(string tungay, string denngay)
         {
             Title title1 = new Title { Font = fontTitle, Text = "Biểu đồ thống kê tương quan phòng Vip và Thường" };

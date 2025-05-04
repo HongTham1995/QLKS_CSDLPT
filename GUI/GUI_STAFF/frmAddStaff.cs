@@ -259,7 +259,7 @@ namespace GUI.GUI_STAFF
 
             if (xacNhan)
             {
-                var manv = Program.nhanVien.MaCN + txtMaNV.Text;
+                var manv =  txtMaNV.Text;
                 var tennv = txtTenNV.Text;
                 var gioitinh = (rbtnNam.Checked) ? 0 : 1;
                 var songayphep = Convert.ToInt32(txtSoNgayPhep.Text);

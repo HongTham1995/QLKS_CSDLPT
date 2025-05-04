@@ -9,6 +9,7 @@ namespace BUS
     public class NhanVienBUS
     {
         Database db;
+        TaiKhoanBUS tkbus = new TaiKhoanBUS();
 
         public NhanVienBUS()
         {
@@ -99,7 +100,7 @@ namespace BUS
             return db.getCN(query);
         }
 
-        public void chuyencongtac(NhanVienDTO nv, string chinhanhMoi)
+        public void chuyencongtac(NhanVienDTO nv,TaiKhoanDTO tk, string chinhanhMoi)
         {
             string serverLinked, maCN;
 
@@ -121,14 +122,9 @@ namespace BUS
 
             nv.MaCN = maCN;
 
-            string query = $@"
-            INSERT INTO {serverLinked}.QLKS_PT.dbo.NHANVIEN 
-            (maNV, tenNV, gioiTinh, soNgayPhep, chucVu, ngaySinh, ngayVaoLam, email, luong1Ngay,xuLy, MaCN) 
-            VALUES 
-            ('{nv.MaNV}', N'{nv.TenNV}', {nv.GioiTinh}, {nv.SoNgayPhep}, {nv.ChucVu}, 
-            '{nv.NgaySinh:yyyy-MM-dd}', '{nv.NgayVaoLam:yyyy-MM-dd}', '{nv.Email}', {nv.Luong1Ngay}, 0, '{maCN}')";
-
-            db.ExecuteNonQuery(query);
+            addNhanVien(serverLinked, nv);
+            tkbus.ThemTaiKhoan(serverLinked, tk.TaiKhoan,tk.MaNV,tk.MaPQ,tk.MatKhau,"0");
+            
         }
 
         public void updateNhanVien(string serverName, NhanVienDTO nv)

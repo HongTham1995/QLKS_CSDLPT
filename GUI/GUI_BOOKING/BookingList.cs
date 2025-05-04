@@ -71,6 +71,7 @@ namespace GUI.GUI_BOOKING
             {
                 if (tbRoom.SelectedRows[0].Cells[8].Value.ToString().Equals("Chưa xử lý"))
                 {
+                    Console.WriteLine(tbRoom.SelectedRows[0].Cells[1].Value.ToString());
                     frmChiTietThue frmBookingNew = new frmChiTietThue(0, tbRoom.SelectedRows[0].Cells[1].Value.ToString());
                     frmBookingNew.TopLevel = false;
                     QLKS_Form form = (QLKS_Form)getParentForm(this);

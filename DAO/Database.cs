@@ -17,7 +17,7 @@ namespace DAO
         DataSet ds;
 
         
-        private string centralConnString = @"Server=HONGTHAM2004\SERVER06;Database=QLKS_PT;User ID=sa;Password=123456;TrustServerCertificate=True;";
+        private string centralConnString = @"Server=HONGTHAM2004\SERVER07;Database=QLKS_PT;User ID=sa;Password=123456;TrustServerCertificate=True;";
 
         public Database()
         {
@@ -43,13 +43,21 @@ namespace DAO
 
         public int ExecuteNonQuery_getInteger(string query)
         {
-            int num;
+            int num = 0;
+
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
-            num = Convert.ToInt32(cmd.ExecuteScalar());
+
+            object result = cmd.ExecuteScalar();
+            if (result != DBNull.Value && result != null)
+            {
+                num = Convert.ToInt32(result);
+            }
+
             conn.Close();
             return num;
         }
+
 
         // Các phương thức đọc dữ liệu khác cũng giữ nguyên,
         // chúng sẽ sử dụng connection đến centralConnString.

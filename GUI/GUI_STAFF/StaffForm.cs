@@ -22,6 +22,7 @@ namespace GUI.GUI_STAFF
     {
 
          NhanVienBUS nhanVienBUS = new NhanVienBUS();
+        TaiKhoanBUS tkbus = new TaiKhoanBUS();
         string maCN = Program.nhanVien.MaCN;
         string sever = Program.ServerName;
         /// <summary>
@@ -1388,9 +1389,13 @@ namespace GUI.GUI_STAFF
                 
                 for (int i = 0; i < dataNhanVien.SelectedRows.Count; i++)
                 {
-                    nhanVienBUS.deleteNhanVien(sever,dataNhanVien.SelectedRows[i].Cells[1].Value.ToString());
+                    
                     NhanVienDTO nv = nhanVienBUS.GetNV( manv);
-                    nhanVienBUS.chuyencongtac(nv, chiNhanhMoi);
+                    TaiKhoanDTO tk = tkbus.GetTKNV(sever, dataNhanVien.SelectedRows[i].Cells[1].Value.ToString());
+                    nhanVienBUS.chuyencongtac(nv,tk, chiNhanhMoi);
+                    nhanVienBUS.deleteNhanVien(sever, dataNhanVien.SelectedRows[i].Cells[1].Value.ToString());
+                    tkbus.XoaTaiKhoan(sever, tk.TaiKhoan);
+
                 }
 
                 form.Close();

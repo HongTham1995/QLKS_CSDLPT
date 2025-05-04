@@ -123,6 +123,19 @@ namespace GUI
                                 
                                 Program.nhanVien = nhanVien.GetNV(it.maNV);
                                 var maCN = Program.nhanVien.MaCN;
+                                
+                                switch (maCN)
+                                {
+                                    case "CN_1":
+                                        Program.chinhanh = "https://www.google.com/maps/place/Ho%C3%A0n+Ki%E1%BA%BFm+Lake/@21.0287797,105.8497898,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab953357c995:0x1babf6bb4f9a20e!8m2!3d21.0286669!4d105.8521484!16zL20vMGdwNjV3?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"; 
+                                        break;
+                                    case "CN_2":
+                                        Program.chinhanh = "https://www.google.com/maps/place/Hue+Museum+of+Royal+Antiquities/@15.9399159,107.3273326,9.29z/data=!4m6!3m5!1s0x3141a12e238f97ed:0x2785f852d78ff1c!8m2!3d16.471343!4d107.58208!16s%2Fm%2F03hnkbw?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D";
+                                        break;
+                                    default:
+                                        Program.chinhanh = "https://www.google.com/maps/place/Saigon+University/@10.7599224,106.6796834,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1b7c3ed289:0xa06651894598e488!8m2!3d10.7599171!4d106.6822583!16s%2Fm%2F02qvnkv?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D";
+                                        break;
+                                }
                                 Program.ServerName=nhanVien.GetServerNameFromMaCN(maCN);
                                 QLKS_Form qlks = new QLKS_Form();
                                 if (Program.nhanVien.GioiTinh == 1)

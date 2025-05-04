@@ -104,8 +104,6 @@ namespace GUI.GUI_BOOKING
 
         private void cbMaCTT_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var maCN = Program.nhanVien.MaCN;
-            
             if (cbMaCTT.SelectedIndex == -1)
             {
                 ResetInformation();
@@ -132,18 +130,19 @@ namespace GUI.GUI_BOOKING
                     if (item.maCTT.Equals(cbMaCTT.SelectedItem.ToString()))
                     {
                         txtTienDatCoc.Text = item.tienDatCoc;
-                    txt_CMND.Text = item.cMND;
-                    txt_NgayLapPhieu.Text = item.ngayLapPhieu;
-                    txt_SDT.Text = item.sDT;
-                    txt_TenKH.Text = item.tenKH;
-                    txt_TenNV.Text = item.tenNV;
-                    if (item.tinhTrangXuLy == 0)
-                    {
-                        txt_TinhTrang.Text = "Chưa xử lý";
-                    } else
-                    {
-                        txt_TinhTrang.Text = "Đã xử lý";
-                    }
+                        txt_CMND.Text = item.cMND;
+                        txt_NgayLapPhieu.Text = item.ngayLapPhieu;
+                        txt_SDT.Text = item.sDT;
+                        txt_TenKH.Text = item.tenKH;
+                        txt_TenNV.Text = item.tenNV;
+                        if (item.tinhTrangXuLy == 0)
+                        {
+                            txt_TinhTrang.Text = "Chưa xử lý";
+                        }
+                        else
+                        {
+                            txt_TinhTrang.Text = "Đã xử lý";
+                        }
                         break;
                     }
                 }
@@ -178,6 +177,7 @@ namespace GUI.GUI_BOOKING
         }
         private void HienThiROOM()
         {
+            Console.WriteLine("phòng: ", cbMaCTT.SelectedItem.ToString());
             pnContent.Controls.Clear();
             frmChiTietThuePhong frmCTT = new frmChiTietThuePhong(cbMaCTT.SelectedItem.ToString(),this);
             frmCTT.TopLevel = false;

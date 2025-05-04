@@ -23,6 +23,7 @@ namespace GUI.GUI_BOOKING
         string sever = Program.ServerName;
         public frmChiTietThuePhong(string maCTT, frmChiTietThue frmCTT)
         {
+            Console.WriteLine("Mã phòng thuê:",maCTT);
             this.frmCTT = frmCTT;
             dt = new DataTable();
             dt.Columns.Add("MaP");

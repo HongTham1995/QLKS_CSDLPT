@@ -14,6 +14,7 @@ namespace GUI
         static NhanVienBUS nvBus = new NhanVienBUS();
         public static NhanVienDTO nhanVien;
         public static string ServerName;
+        public static string chinhanh;
         public static GMailer gmailer = GMailer.Instance;
         /// <summary>
         /// The main entry point for the application.
